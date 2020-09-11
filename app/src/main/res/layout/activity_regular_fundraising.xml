@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_cover"
+            app:drawableStartCompat="@drawable/ic_image"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:drawablePadding="16dp"
+            app:layout_constraintStart_toStartOf="@id/regularFundraisingCover"
+            app:layout_constraintEnd_toEndOf="@id/regularFundraisingCover"
+            app:layout_constraintTop_toTopOf="@id/regularFundraisingCover"
+            app:layout_constraintBottom_toBottomOf="@id/regularFundraisingCover"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/regularFundraisingCover"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="centerCrop"
+            android:background="@drawable/dashed_border" />
+
+        <View
+            android:id="@+id/regularFundraisingRemoveCoverBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/close_button_background"
+            app:layout_constraintTop_toTopOf="@id/regularFundraisingCover"
+            app:layout_constraintEnd_toEndOf="@id/regularFundraisingCover"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:id="@+id/regularFundraisingNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/regularFundraisingCover"
+            android:text="@string/fundraising_name"
+            android:labelFor="@id/regularFundraisingName"/>
+
+        <EditText
+            android:id="@+id/regularFundraisingName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fundraising_name"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/regularFundraisingNameLabel"
+            android:background="@drawable/edittext_background"/>
+
+        <TextView
+            android:id="@+id/regularFundraisingSumLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/regularFundraisingName"
+            android:text="@string/fundraising_sum_monthly"
+            android:labelFor="@id/regularFundraisingSum"/>
+
+        <EditText
+            android:id="@+id/regularFundraisingSum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/how_much_need_monthly"
+            android:layout_marginTop="4dp"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/regularFundraisingSumLabel"
+            android:background="@drawable/edittext_background"/>
+
+        <TextView
+            android:id="@+id/regularFundraisingTargetLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/regularFundraisingSum"
+            android:text="@string/target"
+            android:labelFor="@id/regularFundraisingTarget"/>
+
+        <EditText
+            android:id="@+id/regularFundraisingTarget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/for_example_cure"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/regularFundraisingTargetLabel"
+            android:background="@drawable/edittext_background"/>
+
+        <TextView
+            android:id="@+id/regularFundraisingDescriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/regularFundraisingTarget"
+            android:text="@string/description"
+            android:labelFor="@id/regularFundraisingDescription"/>
+
+        <EditText
+            android:id="@+id/regularFundraisingDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fundraising_description_hint"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/regularFundraisingDescriptionLabel"
+            android:background="@drawable/edittext_background"/>
+
+        <TextView
+            android:id="@+id/regularFundraisingAccountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/regularFundraisingDescription"
+            android:text="@string/account"
+            android:labelFor="@id/regularFundraisingDescription"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/regularFundraisingAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/regularFundraisingAccountLabel"
+            android:background="@drawable/edittext_background" />
+
+        <TextView
+            android:id="@+id/regularFundraisingAuthorLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/regularFundraisingAccount"
+            android:text="@string/author"
+            android:labelFor="@id/regularFundraisingAuthor"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/regularFundraisingAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/regularFundraisingAuthorLabel"
+            android:background="@drawable/edittext_background" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/regularFundraisingOkBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/regularFundraisingAuthor"
+            android:layout_marginTop="24dp"
+            android:text="@string/continue_"
+            android:theme="@style/PrimaryButton"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

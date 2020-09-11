@@ -1,3 +1,31 @@
 <resources>
-  <string name="app_name">Donations</string>
+  <string name="app_name_debug">Donations Debug</string>
+  <string name="app_name_release">Donations</string>
+  <string name="create_fundraising">Create fundraising</string>
+  <string name="no_fundraising_yet">You have not fundraisings yet. \nStart good deed.</string>
+  <string name="fundraisings">Fundraisings</string>
+  <string name="fundraising_type">Fundraising type</string>
+  <string name="targeted_fundraising">Targeted fundraising</string>
+  <string name="when_you_have_a_specific_target">When you have a specific target</string>
+  <string name="regular_fundraising">Regular fundraising</string>
+  <string name="id_help_needs_monthly">If help needs monthly</string>
+  <string name="upload_cover">Upload cover</string>
+  <string name="fundraising_name">Fundraising name</string>
+  <string name="fundraising_sum">Sum, ₽</string>
+  <string name="how_much_need_to_collect">How much need to collect?</string>
+  <string name="target">Target</string>
+  <string name="for_example_cure">For example cure</string>
+  <string name="description">Description</string>
+  <string name="fundraising_description_hint">"What will the money go to and how will it help someone?"</string>
+  <string name="account">Account</string>
+  <string name="fundraising_sum_monthly">Sum monthly, ₽</string>
+  <string name="how_much_need_monthly">How much need monthly?</string>
+  <string name="continue_">Continue</string>
+  <string name="author">Author</string>
+    <string name="when_sum_will_be_collected">When sum will be collected</string>
+  <string name="in_specific_date">In specific date</string>
+    <string name="fundraising_ends">"Fundraising ends "</string>
+  <string name="fundraising_ending_date">Fundraising ending date</string>
+  <string name="select_date">Select date</string>
+  <string name="extra">Extra</string>
 </resources>
