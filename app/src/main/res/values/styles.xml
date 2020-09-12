@@ -25,4 +25,12 @@
     <item name="cornerRadius">12dp</item>
   </style>
 
+  <style name="PrimaryButtonOutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+    <item name="android:textColor">@color/colorAccent</item>
+    <item name="textAllCaps">false</item>
+    <item name="strokeColor">@color/colorAccent</item>
+    <item name="android:padding">12dp</item>
+    <item name="cornerRadius">12dp</item>
+  </style>
+
 </resources>

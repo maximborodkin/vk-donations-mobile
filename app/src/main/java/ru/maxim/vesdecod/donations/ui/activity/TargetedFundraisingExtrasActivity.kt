@@ -1,11 +1,11 @@
 package ru.maxim.vesdecod.donations.ui.activity
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.DatePicker
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_regular_fundraising.*
 import kotlinx.android.synthetic.main.activity_targeted_fundraising_extras.*
 import ru.maxim.vesdecod.donations.R
 import java.text.SimpleDateFormat
@@ -39,6 +39,9 @@ class TargetedFundraisingExtrasActivity : AppCompatActivity(), DatePickerDialog.
         targetedFundraisingEndingDate.isEnabled = false
         targetedFundraisingEndsOnDate.setOnCheckedChangeListener { _, isChecked ->
             targetedFundraisingEndingDate.isEnabled = isChecked
+        }
+        targetedFundraisingExtraOkBtn.setOnClickListener {
+            startActivity(Intent(this, CreatePostActivity::class.java))
         }
     }
 

@@ -28,4 +28,8 @@
   <string name="fundraising_ending_date">Fundraising ending date</string>
   <string name="select_date">Select date</string>
   <string name="extra">Extra</string>
+    <string name="help_first">Help first</string>
+    <string name="help">Help</string>
+  <string name="create_post">Create post</string>
+    <string name="enter_post_text">Enter post text</string>
 </resources>
