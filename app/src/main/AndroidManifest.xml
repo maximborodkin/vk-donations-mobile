@@ -24,13 +24,7 @@
         android:parentActivityName=".ui.activity.FundraisingTypeActivity"/>
     <activity android:name=".ui.activity.TargetedFundraisingExtrasActivity"
         android:parentActivityName=".ui.activity.TargetedFundraisingActivity"/>
-    <activity android:name=".ui.activity.CreatePostActivity" >
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-    </activity>
+    <activity android:name=".ui.activity.CreatePostActivity" />
   </application>
 
 </manifest>

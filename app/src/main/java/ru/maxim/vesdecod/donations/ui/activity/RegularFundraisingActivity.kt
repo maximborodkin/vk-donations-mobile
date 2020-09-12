@@ -48,7 +48,7 @@ class RegularFundraisingActivity : AppCompatActivity() {
         regularFundraisingAuthor.adapter = authorsSpinnerAdapter
         regularFundraisingOkBtn.setOnClickListener {
             if (checkFields()) {
-
+                startActivity(Intent(this, CreatePostActivity::class.java))
             } else {
                 Toast.makeText(this, "Please fill all required fields", Toast.LENGTH_SHORT).show()
             }
